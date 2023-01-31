@@ -1,0 +1,74 @@
+.about {
+  background: url("../../images/building-scaled-2.png") rgba(22, 22, 53);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.about .welcome {
+  text-align: center;
+  color: white;
+}
+
+.about .welcome p {
+  width: 50%;
+  margin: 15px auto;
+}
+
+.about .statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.about .statistics * {
+  text-align: center;
+  color: white;
+}
+
+.about .statistics .icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.about .statistics .hr {
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+
+.about .our-goals {
+  padding: 50px 0;
+}
+
+.about .our-goals h2 {
+  text-align: center;
+  color: white;
+}
+
+.about .our-goals .goals-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.about .our-goals .goals-wrapper * {
+  text-align: center;
+  color: white;
+}
+.about .our-goals .goals-wrapper p {
+  width: 400px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about .our-goals .goals-wrapper {
+    flex-wrap: wrap;
+  }
+  .about .statistics {
+    flex-wrap: wrap;
+  }
+}

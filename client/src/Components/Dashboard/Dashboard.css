@@ -1,0 +1,353 @@
+.Dashboard {
+  background-color: #e3e3e3 !important;
+  display: flex;
+  min-height: 100vh;
+}
+.Dashboard .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #232e33;
+  padding: 40px;
+}
+.Dashboard .head h3 {
+  color: #95979b;
+  margin-bottom: 0;
+}
+.Dashboard .head .icon {
+  color: #36b548 !important;
+}
+.Dashboard .menu {
+  width: 20%;
+  background-color: #1f272d;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dashboard ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Dashboard ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Dashboard ul li a {
+  color: #95979b;
+  transition: 0.1s;
+  font-size: 1.4rem;
+}
+
+.Dashboard ul li a:hover {
+  color: #36b548;
+}
+
+.Dashboard .menu .icon {
+  color: #95979b;
+}
+
+/* dashboard projects */
+
+.Dashboard .projects {
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.Dashboard .projects .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.Dashboard .projects .list .overlay {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.Dashboard .projects .list .overlay .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Dashboard .projects .list .overlay h5 {
+  font-size: 24px;
+}
+
+.Dashboard .projects .overlay .btns {
+  display: flex;
+  gap: 50px;
+}
+
+.Dashboard .projects .overlay .btns .edit {
+  color: greenyellow;
+}
+
+.Dashboard .projects .overlay .btns .delete {
+  color: red;
+}
+
+.Dashboard .projects .list img {
+  width: 300px;
+  height: 250px;
+}
+
+.Dashboard .projects h4 {
+  color: white;
+}
+
+.Dashboard .projects form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #fffeff;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 15px;
+}
+
+.Dashboard h4 {
+  color: #36b548 !important;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.Dashboard .projects form input {
+  width: 500px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #36b548;
+}
+
+.Dashboard .projects form input::placeholder {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  color: black;
+}
+
+.Dashboard .projects form button {
+  background-color: #36b548;
+  width: 160px;
+}
+
+.Dashboard .projects form button:hover {
+  background-color: #36b548;
+}
+
+.Dashboard .projects .project h3 {
+  font-size: 1.2rem;
+}
+.Das .projects .project .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  color: white;
+}
+
+.icon {
+  color: #00cccc;
+  font-size: 1.8rem;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btns-container button {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btns-container .delete {
+  background-color: red;
+}
+.btns-container .edit {
+  background-color: #36b548;
+}
+
+.btns-container .icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* dashboard messages */
+.Dashboard .messages {
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.messages table tr td,
+th {
+  padding: 20px;
+}
+
+.messages thead {
+  background-color: #00cccc;
+}
+
+.messages tr {
+  background-color: #b8bbbb;
+}
+
+.messages .delete {
+  background-color: rgb(218, 26, 26);
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay h5 {
+  color: white;
+}
+
+#overlay .container {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#overlay button.close {
+  padding: 10px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.show {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.Dashboard .messages form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.Dashboard .messages form input {
+  padding: 10px;
+  width: 400px;
+  border-radius: 15px;
+  border: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  a,
+  h1,
+  h2,
+  h3 {
+    overflow-y: hidden;
+  }
+
+  .Dashboard {
+    flex-direction: column;
+  }
+  .Dashboard .menu {
+    width: 100%;
+  }
+  .Dashboard ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Dashboard .messages table tr {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .menu .icon {
+    display: none;
+  }
+
+  h3,
+  .Dashboard ul li a {
+    font-size: 0.9rem;
+  }
+
+  .Dashboard .btns-container button {
+    font-size: 0.8rem;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .Dashboard .projects .img-container img {
+    width: fit-content;
+  }
+}

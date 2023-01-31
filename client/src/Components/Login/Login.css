@@ -1,0 +1,21 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px);
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form input {
+  width: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.login form p {
+  color: red;
+}
