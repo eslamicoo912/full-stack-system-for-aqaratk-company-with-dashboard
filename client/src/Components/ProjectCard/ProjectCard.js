@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 export default function ProjectCard({ project }) {
   const { img, title, category, address, area, price } = project;
@@ -17,7 +18,11 @@ export default function ProjectCard({ project }) {
         <p>{area} متر</p>
         <p>{price} ج.م</p>
       </div>
-      <button className="primary-btn">إحجز الان</button>
+      <button className="primary-btn">
+        <Link className="text-white" to="/contactus">
+          إحجز اللآن
+        </Link>
+      </button>
     </div>
   );
 }
