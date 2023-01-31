@@ -21,26 +21,25 @@ export default function Home() {
     fetchProjectsData();
   }, []);
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
   return (
     <div>
       <Header />
-      <section className="projects">
-        <div className="container">
-          <h1>أحدث المشاريع</h1>
-          <div className="projects-wrapper">
-            {projects.map((project, index) => {
-              return <ProjectCard key={index} project={project} />;
-            })}
-          </div>
+      {loading ? (
+        <div className="loading">
+          <h1>Loading...</h1>
         </div>
-      </section>
+      ) : (
+        <section className="projects">
+          <div className="container">
+            <h1>أحدث المشاريع</h1>
+            <div className="projects-wrapper">
+              {projects.map((project, index) => {
+                return <ProjectCard key={index} project={project} />;
+              })}
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }
