@@ -106,14 +106,14 @@ export default function ContactUs() {
               <h3 className="text-right">رقم الهاتف</h3>
               <li>
                 <AiOutlinePhone />
-                <p>2 01111143363+</p>
+                <p>01111143363</p>
               </li>
             </div>
             <div className="contact">
               <h3 className="text-right">رقم الواتساب</h3>
               <li>
                 <AiOutlineWhatsApp />
-                <p>2 01003797849+</p>
+                <p>01003797849</p>
               </li>
             </div>
           </ul>
