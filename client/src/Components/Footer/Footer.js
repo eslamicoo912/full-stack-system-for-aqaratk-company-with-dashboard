@@ -39,11 +39,11 @@ export default function Footer() {
             </li>
             <li>
               <AiOutlinePhone />
-              <p>+201204505484</p>
+              <p>01111143363+</p>
             </li>
             <li>
               <AiOutlineWhatsApp />
-              <p>+201092908943</p>
+              <p>01003797849+</p>
             </li>
             <li>
               <FaMapMarkerAlt />
