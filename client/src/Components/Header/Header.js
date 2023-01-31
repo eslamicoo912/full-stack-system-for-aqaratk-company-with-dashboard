@@ -9,7 +9,7 @@ export default function Header() {
   const [searchData, setSearchData] = useState({
     country: "",
     category: "",
-    area: 0,
+    area: "المساحة",
   });
   const [projects, setProjects] = useState([]);
   const [overlayDisplay, setOverlayDisplay] = useState("none");
