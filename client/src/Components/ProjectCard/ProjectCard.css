@@ -56,6 +56,7 @@
 
 .project img {
   width: 280px;
+  height: 220px;
   border-radius: 30px;
 }
 
@@ -72,10 +73,12 @@
 
   .project {
     width: auto;
+    min-height: auto;
+    width: 230px;
   }
 
   .project img {
-    width: 200px;
+    width: 230px;
   }
 
   .project h4 {

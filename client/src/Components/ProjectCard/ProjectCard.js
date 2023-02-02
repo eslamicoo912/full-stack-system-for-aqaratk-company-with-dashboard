@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
         <p>{area} متر</p>
         <p>{price} ج.م</p>
       </div>
-      <button className="primary-btn">
+      <button className="primary-btn ">
         <Link className="text-white" to="/contactus">
           إحجز اللآن
         </Link>
