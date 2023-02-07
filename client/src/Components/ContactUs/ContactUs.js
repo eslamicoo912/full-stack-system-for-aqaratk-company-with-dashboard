@@ -99,7 +99,7 @@ export default function ContactUs() {
               <h3 className="text-right">البريد الالكتروني</h3>
               <li>
                 <AiOutlineMail />
-                <p>support@aqaratk.com</p>
+                <p>aqratak2030@yahoo.com</p>
               </li>
             </div>
             <div className="contact">

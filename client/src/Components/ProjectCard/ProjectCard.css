@@ -86,9 +86,11 @@
   }
 
   .project .project-info {
+    text-align: center;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
   }
 }

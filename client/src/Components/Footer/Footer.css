@@ -41,6 +41,30 @@ p {
   color: white;
 }
 
+.social-icons {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.social-icons .facebook {
+  color: rgb(87, 87, 255);
+}
+
+.social-icons .instagram {
+  color: rgb(206, 19, 65);
+}
+
+.social-icons .whatsapp {
+  color: rgb(73, 229, 99);
+}
+
+.social-icons .tiktok {
+  color: #fe5575;
+}
+
 @media only screen and (max-width: 1150px) {
   footer img {
     width: 150px;

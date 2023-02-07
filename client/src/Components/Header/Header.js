@@ -9,7 +9,7 @@ export default function Header() {
   const [searchData, setSearchData] = useState({
     country: "",
     category: "",
-    area: "المساحة",
+    area: "",
   });
   const [projects, setProjects] = useState([]);
   const [overlayDisplay, setOverlayDisplay] = useState("none");
@@ -44,17 +44,6 @@ export default function Header() {
         <p>منزل؟ تجاري؟ لا يهم فأنت مع الخبراء.</p>
         <div className="search">
           <select
-            name="country"
-            onChange={handleChange}
-            className="custom-select"
-            value={searchData.country}
-          >
-            <option value="المحافظة">المحافطة</option>
-            <option value="القاهرة">القاهرة</option>
-            <option value="التجمع">التجمع</option>
-            <option value="العبور">العبور</option>
-          </select>
-          <select
             name="category"
             onChange={handleChange}
             className="custom-select"
@@ -65,6 +54,23 @@ export default function Header() {
             <option value="تجاري">تجاري</option>
             <option value="شاليه">شاليه</option>
           </select>
+          {/*<select
+            name="country"
+            onChange={handleChange}
+            className="custom-select"
+            value={searchData.country}
+          >
+            <option value="المحافظة">المحافطة</option>
+            <option value="القاهرة">القاهرة</option>
+            <option value="التجمع">التجمع</option>
+            <option value="العبور">العبور</option>
+          </select>*/}
+          <input
+            placeholder="المحافظة"
+            name="country"
+            value={searchData.country}
+            onChange={handleChange}
+          />
           <input
             name="area"
             value={searchData.area}
