@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import house from "../../images/myhouse.png";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import ProjectCard from "../ProjectCard/ProjectCard.js";
 
@@ -21,7 +20,9 @@ export default function Header() {
     const searchProjects = response.data.filter(
       (project) => project.area === searchData.area
     );
-    setProjects(searchProjects);
+    setProjects(
+      searchProjects.filter((p) => p.address.includes(searchData.country))
+    );
     setOverlayDisplay("block");
   };
 
