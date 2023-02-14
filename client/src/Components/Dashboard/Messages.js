@@ -130,7 +130,11 @@ export default function Messages() {
                   </button>
                   <div className={overlayDisplay} id="overlay">
                     <div className="container">
-                      <h5>{currentMessage}</h5>
+                      {currentMessage === "" ? (
+                        <h5>الرسالة فارغة</h5>
+                      ) : (
+                        <h5>{currentMessage}</h5>
+                      )}
                       <button
                         className="close"
                         onClick={() => setOverlayDisplay("none")}
