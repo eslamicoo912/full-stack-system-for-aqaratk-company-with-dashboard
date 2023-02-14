@@ -8,7 +8,7 @@ export default function ProjectPage() {
 
   const fetchProject = async () => {
     const response = await axios.get(
-      `http://localhost:5000/projects${window.location.pathname}`
+      `https://aqaratk-app.azurewebsites.net/projects${window.location.pathname}`
     );
     setProject(response.data);
     setLoading(false);
