@@ -15,8 +15,16 @@ export default function ContactUs() {
     email: "",
     text: "",
   });
+  const [nameError, setNameError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
 
   const handleChange = (e) => {
+    if (messageData.phone !== "") {
+      setPhoneError(false);
+    }
+    if (messageData.firstname !== "") {
+      setNameError(false);
+    }
     setMessageData((data) => {
       return {
         ...data,
@@ -26,7 +34,18 @@ export default function ContactUs() {
   };
 
   const submitMessage = async (e) => {
+    setPhoneError(false);
+    setNameError(false);
     e.preventDefault();
+
+    if (messageData.firstname === "") {
+      setNameError(true);
+      return;
+    }
+    if (messageData.phone === "") {
+      setPhoneError(true);
+      return;
+    }
     await axios.post(
       "https://aqaratk-app.azurewebsites.net/messages",
       messageData
@@ -57,6 +76,7 @@ export default function ContactUs() {
               placeholder="الاسم الاول"
             />
           </div>
+          {nameError ? <p className="error">برجاء كتابة اسمك الأول</p> : ""}
           <div className="field-wrapper">
             <input
               name="lastname"
@@ -73,6 +93,7 @@ export default function ContactUs() {
               placeholder="رقم الهاتف"
             />
           </div>
+          {phoneError ? <p className="error">برحاء كتابة رقم هاتفك</p> : ""}
           <div className="field-wrapper">
             <input
               name="email"

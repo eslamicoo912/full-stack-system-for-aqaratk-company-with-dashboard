@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <img src={footer} alt="footer img" />
         </div>
-        <div>
+        <div className="who-us">
           <h3 className="text-right">من نحن</h3>
           <ul>
             <li>

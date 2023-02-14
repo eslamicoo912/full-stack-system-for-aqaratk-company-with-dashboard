@@ -11,6 +11,7 @@ import Login from "./Components/Login/Login.js";
 import Menu from "./Components/Dashboard/Menu";
 import Projects from "./Components/Dashboard/Projects";
 import Messages from "./Components/Dashboard/Messages";
+import ProjectPage from "./Components/ProjectPage/ProjectPage";
 
 export const AppContext = createContext(null);
 
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/admin" element={<Login />} />
+          <Route path="/:id" element={<ProjectPage />} />
         </Routes>
         <Footer />
       </Router>

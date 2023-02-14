@@ -15,6 +15,7 @@ export default function Projects() {
     adress: "",
     area: "",
     price: 0,
+    description: "",
   });
   const [loading, setLoading] = useState(true);
 
@@ -30,7 +31,7 @@ export default function Projects() {
     getProjects();
   }, [visibleForm]);
 
-  const { img, title, category, address, area, price } = formData;
+  const { img, title, category, address, area, price, description } = formData;
 
   const handleChange = (e) => {
     setFormData((prevData) => {
@@ -124,6 +125,12 @@ export default function Projects() {
               name="price"
               onChange={handleChange}
             />
+            <textarea
+              name="description"
+              value={description}
+              onChange={handleChange}
+              placeholder="وصف المشروع"
+            ></textarea>
             <div className="btns-container">
               <button className="btn text-light" type="submit">
                 {visibleForm === "add" ? "اضافة المشروع" : "تعديل المشروع"}

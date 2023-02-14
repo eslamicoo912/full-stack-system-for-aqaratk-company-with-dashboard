@@ -55,17 +55,7 @@ export default function Header() {
             <option value="تجاري">تجاري</option>
             <option value="شاليه">شاليه</option>
           </select>
-          {/*<select
-            name="country"
-            onChange={handleChange}
-            className="custom-select"
-            value={searchData.country}
-          >
-            <option value="المحافظة">المحافطة</option>
-            <option value="القاهرة">القاهرة</option>
-            <option value="التجمع">التجمع</option>
-            <option value="العبور">العبور</option>
-          </select>*/}
+
           <input
             placeholder="المحافظة"
             name="country"

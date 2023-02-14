@@ -86,4 +86,10 @@ p {
   p {
     font-size: 0.8rem;
   }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

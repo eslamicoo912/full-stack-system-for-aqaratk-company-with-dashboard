@@ -67,7 +67,7 @@ export default function Navbar() {
             type="search"
             aria-label="Search"
           />
-          <button className="btn btn-outline-light my-2 my-sm-0" type="submit">
+          <button className="btn btn-outline-light " type="submit">
             بحث
           </button>
         </form>

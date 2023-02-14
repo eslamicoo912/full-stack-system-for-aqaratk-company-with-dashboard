@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 export default function ProjectCard({ project }) {
-  const { img, title, category, address, area, price } = project;
+  const { _id, img, title, category, address, area, price } = project;
   return (
     <div className="project text-right">
-      <div className="img-container">
+      <Link to={`/${_id}`} className="img-container">
         <img src={img} alt="img title" />
-      </div>
+      </Link>
       <div className="project-title">
         <h4 className="title">{title}</h4>
         <h3>-</h3>
@@ -18,11 +18,10 @@ export default function ProjectCard({ project }) {
         <p>{area} متر</p>
         <p>{price} ج.م</p>
       </div>
-      <button className="primary-btn ">
-        <Link className="text-white" to="/contactus">
-          إحجز اللآن
-        </Link>
-      </button>
+
+      <Link className="text-white" to="/contactus">
+        <button className="primary-btn ">إحجز اللآن</button>
+      </Link>
     </div>
   );
 }
