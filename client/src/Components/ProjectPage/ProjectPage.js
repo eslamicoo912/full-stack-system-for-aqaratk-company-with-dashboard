@@ -1,14 +1,14 @@
 import axios from "axios";
 import "./ProjectPage.css";
 import React, { useEffect, useState } from "react";
-console.log(window.location.pathname);
+
 export default function ProjectPage() {
   const [project, setProject] = useState();
   const [loading, setLoading] = useState(true);
 
   const fetchProject = async () => {
     const response = await axios.get(
-      `https://aqaratk-app.azurewebsites.net/projects${window.location.pathname}`
+      `https://aqaratk-app.azurewebsites.net/projects/id${window.location.pathname}`
     );
     setProject(response.data);
     setLoading(false);

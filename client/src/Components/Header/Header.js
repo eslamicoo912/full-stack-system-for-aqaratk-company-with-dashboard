@@ -15,7 +15,7 @@ export default function Header() {
 
   const fetchSearchProjects = async () => {
     const response = await axios.get(
-      `https://aqaratk-app.azurewebsites.net/projects/${searchData.category}`
+      `https://aqaratk-app.azurewebsites.net/projects/category/${searchData.category}`
     );
     const searchProjects = response.data.filter(
       (project) => project.area === searchData.area

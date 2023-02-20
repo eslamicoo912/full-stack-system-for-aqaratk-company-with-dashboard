@@ -11,13 +11,13 @@ export default function Projects() {
 
   const fetchProjects = async () => {
     const housingResponse = await axios.get(
-      "https://aqaratk-app.azurewebsites.net/projects/سكني"
+      "https://aqaratk-app.azurewebsites.net/projects/category/سكني"
     );
     const commercialResponse = await axios.get(
-      "https://aqaratk-app.azurewebsites.net/projects/تجاري"
+      "https://aqaratk-app.azurewebsites.net/projects/category/تجاري"
     );
     const chaletResponse = await axios.get(
-      "https://aqaratk-app.azurewebsites.net/projects/شاليه"
+      "https://aqaratk-app.azurewebsites.net/projects/category/شاليه"
     );
     setHousingProjects(housingResponse.data);
     setCommercialProjects(commercialResponse.data);
